@@ -7,6 +7,8 @@ import Login from './Login.vue'
 import TareasDocente from './TareasDocente.vue'
 import VistaDocente from './VistaDocente.vue'
 import CargadePagina from './CargadePagina.vue'
+import CargaDocumentos from './CargaDocumentos.vue'
+
 
 //componentes de Bootstrap para el HTML
 import 'bootstrap' 
@@ -26,6 +28,8 @@ const routes = [
         path: '/VistaDocente', component: VistaDocente,
     },{
         path: '/Login', component: Login,
+    },{
+        path: '/CargaDocumentos', component: CargaDocumentos,
     }
 ]
 

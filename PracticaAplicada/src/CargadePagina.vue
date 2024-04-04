@@ -9,4 +9,5 @@
     <img src="C:\Users\Juliana\OneDrive\Escritorio\Adelanto\PracticaAplicada\src\Img.logoPoli.webp" class="logo"
       alt="logo Poli" />
   </div>
+  
 </template>

@@ -103,6 +103,7 @@ button {
   background-color: rgb(20, 3, 82);
   cursor: pointer;
   transition: border-color 0.25s;
+  
 }
 button:hover {
   border-color: #de2323;
@@ -263,6 +264,19 @@ th, td {
   z-index: 1000;
   top: 0px;
   left: 0px;
+}
+.BotonActualizar {
+  position: relative;
+  z-index: 1000;
+  top: 380px;
+  left: 690px;
+}
+
+#Comentario{
+  top: 280px;
+  width: 900px;
+  left: 300px;
+  position: fixed;
 }
   
  

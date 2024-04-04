@@ -7,15 +7,15 @@ CREACIÓN PLAN DOCENTE
 import { ref } from 'vue';
 //Enrutador para cambiar de página
 import { useRouter } from 'vue-router';
-
+const router = useRouter();
 /*Función para mostrar una ventana emergente de Windows al usuario y preguntar si está seguro del redireccionamiento*/
 function InicioMensaje() {
   const confirmacion = window.confirm('¿Estás seguro de que quieres volver al inicio de la página?');
   if (confirmacion) {
-    // PONER LA RUTA DEL CODIGO DEL INICIO DE LA PÁGINA
-    window.location.href = '/';
+    router.push('/Login');
   }
 }
+
 /*Función para el botón de confirmar, muestra una ventana de windows para que el usuario sepa que ya va a enviar
 la confirmación del plan docente creado*/
 function confirmar() {
@@ -89,7 +89,7 @@ function eliminarFila(index) {
 
 
 <template>
-  <RouterView></RouterView>
+  <RouterView>
 
   <!-- Muestra el logo de la universidad-->
   <div>
@@ -240,4 +240,5 @@ en el usuario Admin no tienen funcionalidad, en el usuario docente si -->
       </li>
     </ol>
   </nav>
+</RouterView>
 </template>

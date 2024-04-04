@@ -13,8 +13,7 @@ const clave = ref('');
 function buscarEnBaseDeDatos() {
   if (usuario.value === 'jancaicedo' && clave.value === '123') {
     window.confirm('Ingreso exitoso');
-    const router = useRouter();
-    router.push('/TareasDocente');
+    
   } else {
     window.confirm('Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.');
   }
@@ -23,7 +22,7 @@ function buscarEnBaseDeDatos() {
 
 <template>
   <!-- Para poder ver los enrutadores -->
-  <RouterView></RouterView>
+  <RouterView>
   <!-- Logica del login-->
 
   <div class="container" id="login" style="width: 1000px">
@@ -57,5 +56,5 @@ function buscarEnBaseDeDatos() {
     <button @click="buscarEnBaseDeDatos" style="background-color:white" class="btn btn-main" title="Ingresar">INGRESAR <i class="fa-solid fa-caret-right ms-1"></i></button>
     <div>{{ mensaje }}</div>
   </div>
-
+</RouterView>
 </template>
