@@ -19,10 +19,7 @@
   padding: 0px;
   z-index: 1000;
 }
-  .Fondo {
-    position: relative;
-    z-index: 9999; 
-  }
+
   
 .text {
   color: rgb(0, 0, 0);
@@ -81,7 +78,7 @@ a:hover {
   color: rgb(209, 65, 159);
 }
 body {
-
+ 
   overflow-y: auto;
   margin: 0;
   display: flex;
@@ -196,7 +193,6 @@ button:focus-visible {
 #HorasDirectas {
   margin-bottom: 10px; 
   background-color: #ffffff;
-  color:#07268b;
   border: 1px solid #7e12a5; 
   z-index: 1000;
   width: 130px;

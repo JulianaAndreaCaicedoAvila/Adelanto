@@ -1,5 +1,13 @@
 <script setup>
+/*
+
+CREACIÓN PLAN DOCENTE
+
+*/
 import { ref } from 'vue';
+//Enrutador para cambiar de página
+import { useRouter } from 'vue-router';
+
 /*Función para mostrar una ventana emergente de Windows al usuario y preguntar si está seguro del redireccionamiento*/
 function InicioMensaje() {
   const confirmacion = window.confirm('¿Estás seguro de que quieres volver al inicio de la página?');
@@ -25,6 +33,10 @@ function buscarEnBaseDeDatos(cedula) {
     return 'Juliana Andrea Caicedo Avila';
   } else if (cedula == '52442042') {
     return 'Liliana Avila Jimenez';
+  } else if (cedula == '1000708037') {
+    return 'Carolina Cifuentes Ulloa';
+  } else if (cedula == '1000065202') {
+    return 'Andrea Martin Moreno';
   } else {
     return 'No se encontró la cédula y/o código digitado';
   }
@@ -51,7 +63,7 @@ function agregarFila() {
       alert('Este código ya ha sido ingresado.');
     } else {
       // Agregar una nueva fila con el código ingresado
-        filas.value.push({
+      filas.value.push({
         espacioCodigo: codigo,
         espacioFuncion: '',
         espacioAccionPrincipal: '',
@@ -77,6 +89,8 @@ function eliminarFila(index) {
 
 
 <template>
+  <RouterView></RouterView>
+
   <!-- Muestra el logo de la universidad-->
   <div>
     <img src="C:\Users\Juliana\OneDrive\Escritorio\Adelanto\PracticaAplicada\src\Img.logoPoli.webp" class="logo"
